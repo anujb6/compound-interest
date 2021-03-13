@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple interest calculator</title>
+</head>
+<body>
+        <div class="maindiv">
+            
+            <h1>Simple Interest Calculator</h1>
+
+            <span class="text-id">Amount</span><input type="number"  id="principal">  <br/>
+
+            <span class="rate-id">Rate</span><input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange="show_value(this.value)"><span id="slider_value"> 10.25%</span><br/>
+
+            <span class="year-id">No of years</span><input type="numbers" list ="num" id="years"> 
+            <datalist id="num">
+                <option value="1" >
+                <option value="2" >
+                <option value="3" >
+                <option value="4" >
+                <option value="5" >
+                <option value="6" >
+                <option value="7" >
+                <option value="8" >
+                <option value="9" >
+                <option value="10">
+            </datalist> <br/>
+            <button onclick="compute()">result</button><br>
+
+                <span id="result"></span><br>
+
+            <footer>@anujBhor 2021</footer>
+        
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
